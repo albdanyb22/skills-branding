@@ -28,6 +28,10 @@ Tres skills para Claude que cubren el flujo de una identidad de marca, desde el 
 
 Copia la carpeta de la skill a tu carpeta de skills (por ejemplo `~/.claude/skills/`) o súbela como skill en Claude.
 
+## Licencia
+
+MIT (ver [LICENSE](LICENSE)), salvo las fuentes, que tienen su propia licencia (abajo).
+
 ## Notas
 
 - Las fuentes Inter e Inter Tight se incluyen bajo la licencia SIL Open Font License (ver `propuesta-branding/assets/fonts/`).
