@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Post [[COLOR_NOMBRE]] · [[TEMA]]</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=[[FUENTE_TITULAR_URL]]:wght@600;700;800&amp;family=[[FUENTE_TEXTO_URL]]:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:[[TEXTO_SOBRE_COLOR]]}a:hover{color:[[TEXTO_SOBRE_COLOR]]}
+</style>
+</helmet>
+<!--
+PLANTILLA · Post 864×1080 (4:5). Fondo plano de UN color. Titular grande arriba,
+ilustración abajo a la derecha, cierre abajo a la izquierda: una pastilla (evento/llamado)
+o una frase corta. Elige una de las dos, no ambas.
+-->
+<div style="width: 864px; height: 1080px; box-sizing: border-box; position: relative; overflow: hidden; background: [[COLOR]]; padding: 64px; display: flex; flex-direction: column; font-family: '[[FUENTE_TEXTO]]', sans-serif; color: [[TEXTO_SOBRE_COLOR]]">
+  <div style="display: flex; justify-content: space-between; align-items: center">
+    <img src="[[URL_LOGO_TINTA_O_BLANCO]]" alt="[[MARCA]]" style="height: 60px; width: auto">
+    <div style="font-size: 15px; font-weight: 600; letter-spacing: 0.5px">[[PILAR — p. ej. Transparencia / Comunidad]]</div>
+  </div>
+  <div style="margin-top: 64px; font-family: '[[FUENTE_TITULAR]]', sans-serif; font-weight: 800; font-size: 88px; line-height: 0.96; letter-spacing: -3px; max-width: 720px">[[TITULAR — máx. ~40 caracteres]]</div>
+  <!-- cierre A: pastilla -->
+  <div style="margin-top: 28px; display: inline-flex; align-self: flex-start; background: [[TEXTO_SOBRE_COLOR]]; color: [[COLOR]]; border-radius: 999px; padding: 14px 24px; font-size: 22px; font-weight: 600">[[LLAMADO]]</div>
+  <!-- cierre B (alternativa): frase abajo a la izquierda
+  <div style="position: absolute; left: 64px; bottom: 64px; font-size: 22px; line-height: 1.45; max-width: 300px">[[FRASE]]</div> -->
+  <img src="[[URL_ILUSTRACION]]" alt="[[DESCRIPCION_ILUSTRACION]]" style="position: absolute; right: 48px; bottom: 48px; width: 450px; height: auto">
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":864,"height":1080}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

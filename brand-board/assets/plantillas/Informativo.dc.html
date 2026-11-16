@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>[[TIPO_PIEZA]] · [[COLOR_NOMBRE]]</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=[[FUENTE_TITULAR_URL]]:wght@600;700;800&amp;family=[[FUENTE_TEXTO_URL]]:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:[[COLOR]]}a:hover{color:[[TINTA]]}
+</style>
+</helmet>
+<!--
+PLANTILLA · Pieza informativa 720×1018: la pieza "de servicio" del rubro
+(comunicado a vecinos, menú, horario, aviso de tienda, ficha de producto, invitación…).
+Fondo neutro; el color de la marca solo en la franja superior, la etiqueta y la línea del pie.
+Datos que el cliente debe llenar van como [EN MAYÚSCULAS ENTRE CORCHETES]; nunca inventes nombres, fechas ni precios.
+-->
+<div style="width: 720px; height: 1018px; box-sizing: border-box; overflow: hidden; background: [[NEUTRO]]; display: flex; flex-direction: column; font-family: '[[FUENTE_TEXTO]]', sans-serif; color: [[TINTA]]">
+  <div style="background: [[COLOR]]; padding: 40px 48px; display: flex; justify-content: space-between; align-items: center; color: [[TEXTO_SOBRE_COLOR]]">
+    <img src="[[URL_LOGO_TINTA_O_BLANCO]]" alt="[[MARCA]]" style="height: 56px; width: auto">
+    <div style="text-align: right; font-size: 15px; line-height: 1.4"><div style="font-weight: 600">[[CONTEXTO — p. ej. Edificio [NOMBRE] / Sucursal [NOMBRE]]]</div><div>[[TIPO_PIEZA]]</div></div>
+  </div>
+  <div style="padding: 52px 48px 0; display: flex; flex-direction: column; gap: 22px">
+    <div style="display: inline-flex; align-self: flex-start; background: #FFFFFF; border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; color: [[COLOR_LEGIBLE_SOBRE_BLANCO]]">[[ETIQUETA]]</div>
+    <div style="font-family: '[[FUENTE_TITULAR]]', sans-serif; font-weight: 800; font-size: 56px; line-height: 1.0; letter-spacing: -1.8px">[[TITULAR]]</div>
+    <div style="font-size: 20px; line-height: 1.5; max-width: 560px">[[TEXTO — 1-2 frases en el tono de la marca]]</div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 6px">
+      <div style="background: #FFFFFF; border-radius: 16px; padding: 18px 20px"><div style="font-size: 13px; color: [[GRIS]]">[[DATO_1_ETIQUETA]]</div><div style="font-size: 20px; font-weight: 600; margin-top: 4px">[[[DATO_1]]]</div></div>
+      <div style="background: #FFFFFF; border-radius: 16px; padding: 18px 20px"><div style="font-size: 13px; color: [[GRIS]]">[[DATO_2_ETIQUETA]]</div><div style="font-size: 20px; font-weight: 600; margin-top: 4px">[[[DATO_2]]]</div></div>
+    </div>
+  </div>
+  <img src="[[URL_ILUSTRACION]]" alt="[[DESCRIPCION_ILUSTRACION]]" style="flex: 1; min-height: 0; width: 60%; align-self: center; object-fit: contain; object-position: bottom; margin-top: 24px">
+  <div style="border-top: 2px solid [[COLOR]]; padding: 18px 48px; display: flex; align-items: center; gap: 12px; font-size: 14px">
+    <img src="[[URL_SIMBOLO_EN_COLOR — o quítalo si no hay símbolo]]" alt="" style="width: 22px; height: 22px">
+    <span><b style="font-weight: 600">[[FIRMA]]</b> · [CONTACTO]</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":720,"height":1018}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

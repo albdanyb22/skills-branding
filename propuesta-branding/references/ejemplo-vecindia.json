@@ -1,0 +1,81 @@
+{
+  "marca": "Vecindia",
+  "disenador": { "nombre": "Daniela Albarrán", "rol": "Designer" },
+  "fecha": "Octubre 2026",
+  "quienes_somos": "Somos una empresa de Facility Management y Property Management en Lima que humaniza la administración de edificios y condominios. Gestionamos las áreas comunes y la propiedad de cada propietario con transparencia y proactividad, mientras convertimos a los vecinos en una verdadera comunidad.",
+  "mision": "Humanizar la administración de edificios y condominios, integrando a los vecinos para que dejen de ser extraños y se conviertan en una real comunidad.",
+  "vision": "Ser una empresa de servicios transparentes y confiables, que busca la integración y el crecimiento de sus comunidades, y no solo la protección de las áreas comunes.",
+  "valores": [
+    { "nombre": "Transparencia", "descripcion": "Cuentas claras y a la vista de todos. Cada sol que entra y sale del edificio se reporta sin letra pequeña, porque la confianza empieza por los números." },
+    { "nombre": "Cercanía", "descripcion": "Conocemos a los vecinos por su nombre. Respondemos rápido, hablamos claro y estamos presentes en el día a día del edificio, no solo en la junta anual." },
+    { "nombre": "Confianza", "descripcion": "Nos anticipamos a los problemas con mantenimiento proactivo y cumplimos lo que prometemos. Que el vecino duerma tranquilo es nuestro mejor indicador." }
+  ],
+  "reason_why": "La confianza en Vecindia se fundamenta en cuentas 100% transparentes, mantenimiento proactivo de las áreas comunes y una gestión eficiente de la morosidad, sumados a una herramienta tecnológica en desarrollo que facilita el diálogo entre vecinos y hace visible todo lo que pasa en el edificio.",
+  "personificacion": "Si Vecindia fuera una persona, sería una arquitecta de 34 años que vive en Barranco: profesional, organizada y con las cuentas siempre al día, pero que también es la vecina que organiza la parrillada del edificio y saluda a todos en el ascensor. Viste casual-smart, usa TikTok para enterarse de todo y resuelve los problemas antes de que se conviertan en quejas.",
+  "personalidad": {
+    "intro": "Vecindia no es solo una administradora; es el vecino que todos quisieran tener. Combina la eficiencia de una gestión profesional con la calidez de una comunidad. Su personalidad se define por tres rasgos fundamentales extraídos del brief:",
+    "rasgos": [
+      { "nombre": "El Anfitrión Cercano", "descripcion": "Crea espacios de encuentro y hace que cada vecino se sienta parte de algo. No administra metros cuadrados; cuida personas." },
+      { "nombre": "El Gestor Transparente", "descripcion": "Muestra los números sin miedo. Su orden y claridad son la base para que la comunidad confíe en él." },
+      { "nombre": "El Optimista Proactivo", "descripcion": "Fresco, joven y con energía positiva. Se adelanta a los problemas del edificio y los resuelve con buen humor." }
+    ]
+  },
+  "brand_mantra": "Vecinos que se vuelven comunidad.",
+  "tono_de_voz": {
+    "intro": "El tono debe reflejar una marca cálida, joven y confiable. Dado que el público principal son propietarios de 30 a 60 años, de nivel socioeconómico medio-alto y con educación universitaria, la comunicación debe ser cercana sin perder la claridad profesional.",
+    "dimensiones": [
+      { "nombre": "Cercano y Amigable", "descripcion": "Habla como un buen vecino: tutea con respeto, usa un lenguaje simple y evita la jerga corporativa." },
+      { "nombre": "Claro y Transparente", "descripcion": "Explica los números y las decisiones sin rodeos. Si algo salió mal, lo dice y cuenta cómo lo resuelve." },
+      { "nombre": "Optimista y Divertido", "descripcion": "Usa el humor y la energía positiva, sobre todo en TikTok e Instagram, sin caer en lo informal en temas sensibles como cobranzas." }
+    ],
+    "ejemplos": [
+      { "situacion": "Reporte mensual", "dice": "Aquí están las cuentas del mes, clarito y sin letra pequeña.", "evita": "Se adjunta el estado financiero conforme a ley." },
+      { "situacion": "Mantenimiento", "dice": "Ya revisamos la bomba de agua antes de que falle. ¡Cero sorpresas!", "evita": "Se programará la revisión cuando haya disponibilidad." },
+      { "situacion": "Morosidad", "dice": "Te recordamos tu cuota; si necesitas un plan de pago, conversemos.", "evita": "Su deuda será publicada en el ascensor." }
+    ]
+  },
+  "posicionamiento": "Vecindia se posiciona como la administradora de edificios más humana de Lima: la única que, además de gestionar con transparencia y eficiencia las áreas comunes, construye comunidad entre vecinos. No somos una administradora fría y corporativa; somos el aliado que convierte un edificio en un hogar compartido.",
+  "benchmark": {
+    "subtitulo": "Facility & Property Management residencial y corporativo (Lima, Perú).",
+    "marcas": [
+      { "nombre": "CBRE", "motivo": "Por su línea gráfica sólida y consistente, que transmite liderazgo global." },
+      { "nombre": "REMS", "motivo": "Competidor directo local; referencia de lo corporativo que queremos evitar en tono." },
+      { "nombre": "Airbnb", "motivo": "Por su capacidad de transmitir pertenencia y calidez con un sistema visual simple." }
+    ],
+    "referentes_visuales": ["CBRE", "REMS", "Airbnb", "Nextdoor", "Urbania", "Mailchimp"]
+  },
+  "moodboard": {
+    "texto": "El universo visual de Vecindia celebra la vida en comunidad: colores cálidos, formas redondeadas y personas reales compartiendo espacios. Una estética fresca y divertida que, en su versión corporativa, se ordena y se vuelve más sobria sin perder calidez.",
+    "descripcion_imagenes": [
+      "Vecinos compartiendo en una azotea al atardecer",
+      "Ilustración de edificio con ventanas de colores",
+      "Paleta cálida: terracota, mostaza, coral",
+      "Fachada de edificio moderno en Lima",
+      "Formas orgánicas redondeadas superpuestas",
+      "Piezas para TikTok con tipografía grande y divertida"
+    ],
+    "paleta": [
+      { "nombre": "Coral", "hex": "#FF6B4A" },
+      { "nombre": "Mostaza", "hex": "#F5B700" },
+      { "nombre": "Terracota", "hex": "#C8553D" },
+      { "nombre": "Crema", "hex": "#FFF4E0" },
+      { "nombre": "Noche", "hex": "#1E1B2E" }
+    ]
+  },
+  "type_board": {
+    "texto": "El type board combina una sans-serif redondeada y amigable para titulares, que transmite calidez y juventud, con una sans-serif humanista muy legible para textos y reportes, que aporta el orden y la claridad de una gestión profesional.",
+    "fuentes": [
+      { "nombre": "Fredoka", "rol": "Titulares redes" },
+      { "nombre": "Nunito", "rol": "Titulares" },
+      { "nombre": "Quicksand", "rol": "Display" },
+      { "nombre": "DM Sans", "rol": "Textos" },
+      { "nombre": "Manrope", "rol": "Corporativo" },
+      { "nombre": "Inter", "rol": "Reportes" }
+    ]
+  },
+  "concepto": {
+    "nombre": "El Edificio que Abraza",
+    "texto": "El branding de Vecindia se fundamenta en la idea de que un edificio es más que paredes: es un abrazo entre vecinos. Las formas redondeadas y los módulos que se unen representan a cada departamento como una pieza que, al conectarse con las demás, forma una comunidad.",
+    "descripcion_imagen": "Imagen de referencia: vecinos reunidos en el área común"
+  }
+}

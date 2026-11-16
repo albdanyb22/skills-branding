@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>[[MARCA]] · Brand board</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=[[FUENTE_TITULAR_URL]]:wght@500;600;700;800&amp;family=[[FUENTE_TEXTO_URL]]:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:[[TINTA]]}a:hover{color:#000}
+</style>
+</helmet>
+<!--
+PLANTILLA · Brand board 1920×1200 · grilla 4×3 de mosaicos.
+Reemplaza cada [[TOKEN]]. Regla: cada mosaico usa UN color de la marca (o blanco/tinta).
+Mosaicos: 1 Logotipo (2 col) · 2 Color (2 col) · 3 Sistema / variantes (2 col)
+4 Ilustración sobre color A · 5 Símbolo sobre color B · 6 Tipografía
+7 Voz: titular + ilustración sobre color C (2 col) · 8 Regla de oro sobre tinta.
+Si la marca no tiene símbolo, el mosaico 5 muestra el logo en blanco sobre el color B.
+Si no tiene sistema dinámico, el mosaico 3 muestra usos: positivo, negativo, sobre color y tamaño mínimo.
+-->
+<div style="width: 1920px; height: 1200px; box-sizing: border-box; padding: 48px; background: [[NEUTRO]]; font-family: '[[FUENTE_TEXTO]]', sans-serif; color: [[TINTA]]; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(0, 1fr)); gap: 24px">
+
+  <div style="grid-column: span 2; background: #FFFFFF; border-radius: 28px; padding: 36px 40px; display: flex; flex-direction: column; justify-content: space-between">
+    <div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 500; color: [[GRIS]]"><span>Logotipo</span><span>[[TAGLINE]]</span></div>
+    <img src="[[URL_LOGO_PRINCIPAL]]" alt="Logo [[MARCA]]" style="height: 200px; width: auto; max-width: 100%; align-self: flex-start; object-fit: contain">
+    <div style="font-size: 15px; color: [[GRIS]]; max-width: 560px; line-height: 1.5">[[NOTA_LOGO — una frase sobre cómo funciona el logo]]</div>
+  </div>
+
+  <div style="grid-column: span 2; background: #FFFFFF; border-radius: 28px; padding: 36px 40px; display: flex; flex-direction: column; gap: 22px">
+    <div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 500; color: [[GRIS]]"><span>Color</span><span>[[LEMA_COLOR]]</span></div>
+    <div style="flex: 1; display: grid; grid-template-columns: repeat([[N_COLORES]], minmax(0, 1fr)); gap: 10px">
+      <!-- una por color; color de texto = el que recomienda palette_check.py -->
+      <div style="background: [[HEX]]; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; justify-content: flex-end; font-size: 13px; line-height: 1.35; color: [[TEXTO_SOBRE_HEX]]"><b style="font-weight: 600">[[NOMBRE]]</b><span>[[HEX]]</span></div>
+    </div>
+    <div style="display: flex; gap: 10px; height: 56px">
+      <div style="flex: 1; background: [[TINTA]]; color: #FFFFFF; border-radius: 14px; padding: 0 16px; display: flex; align-items: center; justify-content: space-between; font-size: 13px"><b style="font-weight: 600">Tinta</b><span>[[TINTA]]</span></div>
+      <div style="flex: 1; background: [[NEUTRO]]; border: 1px solid [[BORDE]]; border-radius: 14px; padding: 0 16px; display: flex; align-items: center; justify-content: space-between; font-size: 13px"><b style="font-weight: 600">Neutro</b><span>[[NEUTRO]]</span></div>
+      <div style="flex: 1; background: #FFFFFF; border: 1px solid [[BORDE]]; border-radius: 14px; padding: 0 16px; display: flex; align-items: center; justify-content: space-between; font-size: 13px"><b style="font-weight: 600">Blanco</b><span>#FFFFFF</span></div>
+    </div>
+  </div>
+
+  <div style="grid-column: span 2; background: #FFFFFF; border-radius: 28px; padding: 36px 40px; display: flex; flex-direction: column; gap: 20px">
+    <div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 500; color: [[GRIS]]"><span>[[TITULO_SISTEMA — p. ej. Sistema dinámico / Usos del logo]]</span><span>[[LEMA_SISTEMA]]</span></div>
+    <div style="flex: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 28px; align-items: center">
+      <!-- hasta 6 variantes del logo -->
+      <img src="[[URL_LOGO_VARIANTE]]" alt="Logo [[VARIANTE]]" style="height: 84px; width: auto; max-width: 100%; object-fit: contain">
+    </div>
+  </div>
+
+  <div style="background: [[COLOR_A]]; border-radius: 28px; padding: 28px 28px 0; display: flex; flex-direction: column; overflow: hidden; color: [[TEXTO_SOBRE_A]]">
+    <div style="font-size: 15px; font-weight: 500">Ilustración</div>
+    <img src="[[URL_ILUSTRACION_1]]" alt="[[DESCRIPCION_ILUSTRACION_1]]" style="flex: 1; min-height: 0; width: 100%; object-fit: contain; object-position: bottom">
+  </div>
+
+  <div style="background: [[COLOR_B]]; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; justify-content: space-between; color: [[TEXTO_SOBRE_B]]">
+    <div style="font-size: 15px; font-weight: 500">Símbolo</div>
+    <img src="[[URL_SIMBOLO_EN_TEXTO_SOBRE_B]]" alt="Símbolo de [[MARCA]]" style="width: 132px; height: 132px; align-self: center; object-fit: contain">
+    <div style="font-family: '[[FUENTE_TITULAR]]', sans-serif; font-weight: 700; font-size: 26px; line-height: 1.12; letter-spacing: -0.5px">[[SIGNIFICADO_SIMBOLO — 2 líneas]]</div>
+  </div>
+
+  <div style="background: #FFFFFF; border-radius: 28px; padding: 28px 32px; display: flex; flex-direction: column; justify-content: space-between">
+    <div style="font-size: 15px; font-weight: 500; color: [[GRIS]]">Tipografía</div>
+    <div style="font-family: '[[FUENTE_TITULAR]]', sans-serif; font-weight: 800; font-size: 120px; line-height: 0.9; letter-spacing: -4px">Aa</div>
+    <div style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.4">
+      <div><b style="font-weight: 600">[[FUENTE_LOGO]]</b> <span style="color: [[GRIS]]">· logotipo</span></div>
+      <div><b style="font-weight: 600">[[FUENTE_TITULAR]]</b> <span style="color: [[GRIS]]">· titulares</span></div>
+      <div><b style="font-weight: 600">[[FUENTE_TEXTO]]</b> <span style="color: [[GRIS]]">· textos</span></div>
+    </div>
+  </div>
+
+  <div style="grid-column: span 2; background: [[COLOR_C]]; border-radius: 28px; padding: 32px 0 0 36px; display: flex; gap: 8px; overflow: hidden; color: [[TEXTO_SOBRE_C]]">
+    <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding-bottom: 32px">
+      <div style="font-size: 15px; font-weight: 500">Voz</div>
+      <div style="font-family: '[[FUENTE_TITULAR]]', sans-serif; font-weight: 800; font-size: 48px; line-height: 1.02; letter-spacing: -1.6px">[[FRASE_INSIGNIA]]</div>
+      <div style="font-size: 15px; font-weight: 500">[[TONO_EN_UNA_LINEA]]</div>
+    </div>
+    <img src="[[URL_ILUSTRACION_2]]" alt="[[DESCRIPCION_ILUSTRACION_2]]" style="width: 360px; height: 100%; object-fit: contain; object-position: bottom right">
+  </div>
+
+  <div style="background: [[TINTA]]; border-radius: 28px; padding: 28px; display: flex; flex-direction: column; justify-content: space-between; color: #FFFFFF">
+    <div style="font-size: 15px; font-weight: 500; color: #BDB8B0">Regla de oro</div>
+    <div style="font-family: '[[FUENTE_TITULAR]]', sans-serif; font-weight: 800; font-size: 38px; line-height: 1.02; letter-spacing: -1.2px">[[REGLA — p. ej. Un color<br>por pieza.]]</div>
+    <div style="display: flex; gap: 8px; align-items: center">
+      <div style="width: 44px; height: 44px; border-radius: 12px; background: [[COLOR_D]]"></div>
+      <div style="width: 44px; height: 44px; border-radius: 12px; background: [[NEUTRO]]"></div>
+      <div style="width: 44px; height: 44px; border-radius: 12px; background: #FFFFFF; border: 1px solid #3A3A37"></div>
+      <span style="font-size: 13px; color: #BDB8B0; margin-left: 6px; line-height: 1.35">color + tinta<br>+ neutro</span>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1920,"height":1200}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

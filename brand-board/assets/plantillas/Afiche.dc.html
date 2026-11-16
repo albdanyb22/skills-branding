@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Afiche [[COLOR_NOMBRE]] · [[TEMA]]</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=[[FUENTE_TITULAR_URL]]:wght@600;700;800&amp;family=[[FUENTE_TEXTO_URL]]:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:[[TEXTO_SOBRE_COLOR]]}a:hover{color:[[TEXTO_SOBRE_COLOR]]}
+</style>
+</helmet>
+<!--
+PLANTILLA · Afiche 720×1018 (proporción A) · un solo color de fondo.
+Retícula suave: líneas en tinta al 9 % sobre fondos claros; en blanco al 10 % sobre fondos oscuros.
+Logo: versión tinta o blanca según palette_check.py. La tarjeta central va en el neutro de la marca con texto en tinta.
+-->
+<div style="width: 720px; height: 1018px; box-sizing: border-box; position: relative; overflow: hidden; background-color: [[COLOR]]; background-image: linear-gradient([[LINEA_RETICULA]] 2px, transparent 2px), linear-gradient(90deg, [[LINEA_RETICULA]] 2px, transparent 2px); background-size: 72px 72px; padding: 56px 56px 0; display: flex; flex-direction: column; align-items: center; font-family: '[[FUENTE_TEXTO]]', sans-serif; color: [[TEXTO_SOBRE_COLOR]]">
+  <img src="[[URL_LOGO_TINTA_O_BLANCO]]" alt="[[MARCA]]" style="height: 70px; width: auto">
+  <div style="margin-top: 40px; width: 100%; box-sizing: border-box; background: [[NEUTRO]]; color: [[TINTA]]; border-radius: 22px; padding: 44px 40px; text-align: center; display: flex; flex-direction: column; gap: 18px">
+    <div style="font-family: '[[FUENTE_TITULAR]]', sans-serif; font-weight: 800; font-size: 60px; line-height: 1.0; letter-spacing: -2px">[[TITULAR — máx. ~45 caracteres]]</div>
+    <div style="font-size: 21px; font-weight: 500">[[BAJADA — una línea]]</div>
+  </div>
+  <img src="[[URL_ILUSTRACION]]" alt="[[DESCRIPCION_ILUSTRACION]]" style="flex: 1; min-height: 0; width: 88%; object-fit: contain; object-position: bottom; margin-top: 20px">
+  <div style="position: absolute; right: 18px; bottom: 44px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 13px; font-weight: 600; letter-spacing: 1px">[[TAGLINE]]</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":720,"height":1018}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
